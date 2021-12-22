@@ -1,0 +1,70 @@
+.container {
+    min-height: 3rem;
+    
+    position: relative;
+
+    margin: .75rem 0;
+    padding: .5rem .75rem;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 6px;
+
+    background: var(--task-back-color);
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto; /* Not working with most of the browsers (works in Firefox and Safari 5.1+) */
+    cursor: pointer;
+
+    -webkit-box-shadow: .25rem .25rem 0 0 var(--task-not-done-color);
+    -moz-box-shadow: .25rem .25rem 0 0 var(--task-not-done-color);
+    box-shadow: .25rem .25rem 0 0 var(--task-not-done-color);
+
+    transition: .15s;
+}
+
+.delete {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+
+    width: 1.25rem;
+    height: 1.25rem;
+
+    border-radius: 3px;
+
+    background: var(--task-not-done-color);
+    
+    font-size: 1.5rem;
+    line-height: 1rem;
+    color: rgb(224, 224, 224);
+}
+
+.container:hover,
+.delete:hover {
+    transform: translateY(-2px) scale(1.01);
+}
+
+.container.checked {
+    -webkit-box-shadow: .25rem .25rem 0 0 var(--task-done-color);
+    -moz-box-shadow: .25rem .25rem 0 0 var(--task-done-color);
+    box-shadow: .25rem .25rem 0 0 var(--task-done-color);
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    color: var(--task-header-color);
+}
+
+.confirmed {
+    margin-left: .1rem;
+    line-height: 100%;
+}
+
+.description {
+    margin-top: .25rem;
+    font-size: .75rem;
+
+    color: var(--task-desc-color);
+}

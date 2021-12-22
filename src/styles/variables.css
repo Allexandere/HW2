@@ -1,0 +1,10 @@
+:root {
+    --app-back-color: #d4e4eb;
+    --task-list-back-color: rgba(255, 255, 255, .35);
+    --task-add-back-color: #fff;
+    --task-back-color: #fff;
+    --task-header-color: #000;
+    --task-desc-color: #505050;
+    --task-not-done-color: #c70000;
+    --task-done-color: #50c700;
+}
